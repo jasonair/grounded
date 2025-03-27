@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounded | Earn Rewards for Sustainable Choices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Grounded</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#waitlist" class="nav-btn">Join Waitlist</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="header-content">
+            <div class="text-box">
+                <h1>Earn Real Rewards for Reducing Your Carbon Footprint</h1>
+                <p>Track your daily habits, earn points for sustainable choices, and get rewarded by eco-conscious brands</p>
+                <a href="#waitlist" class="hero-btn">Join the Waitlist</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How Grounded Works</h2>
+        <div class="row">
+            <div class="process-col">
+                <div class="icon-container">
+                    <i class="fas fa-location-dot"></i>
+                </div>
+                <h3>Track Your Habits</h3>
+                <p>The app automatically tracks your travel methods and daily behaviors</p>
+            </div>
+            <div class="process-col">
+                <div class="icon-container">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Earn Points</h3>
+                <p>Get rewarded for sustainable choices like avoiding flights and choosing active commuting</p>
+            </div>
+            <div class="process-col">
+                <div class="icon-container">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3>Redeem Rewards</h3>
+                <p>Exchange points for real rewards from sustainable brands</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="row">
+            <div class="feature-col">
+                <div class="feature-icon">
+                    <i class="fas fa-plane-slash"></i>
+                </div>
+                <h3>Flight Avoidance Bonus</h3>
+                <p>+10 points per day grounded; -2000 points per flight</p>
+            </div>
+            <div class="feature-col">
+                <div class="feature-icon">
+                    <i class="fas fa-bicycle"></i>
+                </div>
+                <h3>Car-Free Commuting</h3>
+                <p>+1 point per km of active commute</p>
+            </div>
+            <div class="feature-col">
+                <div class="feature-icon">
+                    <i class="fas fa-house-laptop"></i>
+                </div>
+                <h3>Work From Home</h3>
+                <p>+36 points per day for short commutes or WFH</p>
+            </div>
+            <div class="feature-col">
+                <div class="feature-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>Exercise Streaks</h3>
+                <p>+50 points for 5-day streaks; +300 for 30-day streaks</p>
+            </div>
+            <div class="feature-col">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-screen"></i>
+                </div>
+                <h3>Screen Time Reduction</h3>
+                <p>+1 point/day reduced screen-time; monthly bonuses</p>
+                <span class="coming-soon">Coming Soon</span>
+            </div>
+            <div class="feature-col">
+                <div class="feature-icon">
+                    <i class="fas fa-battery-full"></i>
+                </div>
+                <h3>Energy Efficiency</h3>
+                <p>+1 point/day reduced charging frequency</p>
+                <span class="coming-soon">Coming Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="carbon-impact" class="carbon-impact">
+        <div class="impact-container">
+            <h2>Your Impact Matters</h2>
+            <p>One point equals 0.1 kg of CO₂e saved</p>
+            <div class="counter-container">
+                <div class="counter">
+                    <span id="carbon-counter">0</span>
+                    <span>kg</span>
+                </div>
+                <p>Potential carbon savings if <span id="user-count">1000</span> people joined Grounded for one year</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="partners">
+        <h2>Rewards from Eco-Conscious Brands</h2>
+        <p>Exchange your points for rewards from brands committed to sustainability</p>
+        <div class="partner-logos">
+            <div class="logo-container">
+                <img src="https://logo.clearbit.com/terrapass.com" alt="TerraPass" class="partner-logo">
+                <p class="partner-name">TerraPass</p>
+            </div>
+            <div class="logo-container">
+                <img src="https://logo.clearbit.com/trekbikes.com" alt="Trek Bikes" class="partner-logo">
+                <p class="partner-name">Trek Bikes</p>
+            </div>
+            <div class="logo-container">
+                <img src="https://logo.clearbit.com/patagonia.com" alt="Patagonia" class="partner-logo">
+                <p class="partner-name">Patagonia</p>
+            </div>
+            <div class="logo-container">
+                <img src="https://logo.clearbit.com/rei.com" alt="REI" class="partner-logo">
+                <p class="partner-name">REI</p>
+            </div>
+            <div class="logo-container">
+                <img src="https://logo.clearbit.com/headspace.com" alt="Headspace" class="partner-logo">
+                <p class="partner-name">Headspace</p>
+            </div>
+            <div class="logo-container">
+                <img src="https://logo.clearbit.com/anker.com" alt="Anker" class="partner-logo">
+                <p class="partner-name">Anker</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <h2>Benefits</h2>
+        <div class="benefits-container">
+            <div class="benefit-col">
+                <h3>For You</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> <span>Track your personal carbon impact</span></li>
+                    <li><i class="fas fa-check"></i> <span>Earn tangible rewards for sustainable choices</span></li>
+                    <li><i class="fas fa-check"></i> <span>Join a community of like-minded individuals</span></li>
+                    <li><i class="fas fa-check"></i> <span>Gamify your contribution to fighting climate change</span></li>
+                    <li><i class="fas fa-check"></i> <span>Receive digital badges for reaching milestones</span></li>
+                </ul>
+            </div>
+            <div class="benefit-col">
+                <h3>For the Planet</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> <span>Reduce carbon emissions from transportation</span></li>
+                    <li><i class="fas fa-check"></i> <span>Promote sustainable lifestyle choices</span></li>
+                    <li><i class="fas fa-check"></i> <span>Create accountability through measurable actions</span></li>
+                    <li><i class="fas fa-check"></i> <span>Build a movement for everyday climate action</span></li>
+                    <li><i class="fas fa-check"></i> <span>Standardized impact measurement across all users</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="waitlist" class="waitlist">
+        <h2>Be the First to Get Grounded</h2>
+        <div class="form-container">
+            <form id="waitlist-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest">What sustainable habit are you most interested in tracking?</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="flight">Avoiding flights</option>
+                        <option value="commute">Active commuting</option>
+                        <option value="wfh">Working from home</option>
+                        <option value="exercise">Exercise streaks</option>
+                        <option value="screen">Screen time reduction</option>
+                        <option value="energy">Energy efficiency</option>
+                    </select>
+                </div>
+                <button type="submit" class="form-btn">Join the Waitlist</button>
+                <p class="privacy-note">We respect your privacy and will only use your email to send updates about Grounded</p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Grounded</h3>
+                <p>Making sustainable choices rewarding</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Grounded. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <i class="fas fa-check-circle success-icon"></i>
+            <h2>Thank you for joining!</h2>
+            <p>You're now on the waitlist for Grounded. We'll notify you when we launch.</p>
+            <button class="modal-btn" id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
