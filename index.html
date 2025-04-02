@@ -229,32 +229,34 @@
     </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h3>Grounded.</h3>
-                <p>Making sustainable choices rewarding</p>
-            </div>
-            <div class="footer-links">
-                <h4>Links</h4>
-                <ul>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#partners">Partners</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4>Connect With Us</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Grounded.</h3>
+                    <p>Making sustainable choices rewarding</p>
                 </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                    </ul>
+                </div>
+                <!-- Remove this entire section including the heading -->
+                <!-- <div class="footer-section">
+                     <h3>Connect With Us</h3>
+                     Social icons removed as requested -->
+                </div> 
+                
+                <!-- Remove any popup-related HTML that was added at the end of the body -->
+                <!-- Also remove the script reference if it was only for the popup -->
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Grounded. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grounded. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
         </div>
     </footer>
 
@@ -271,3 +273,22 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- Remove the following contact form section that appears below the footer -->
+<!-- 
+<section class="contact-form">
+    <div class="container">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="send-message">Send Message</button>
+    </div>
+</section>
+-->
+<!-- Add the popup HTML at the end of the body -->
+<div id="socialPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closeSocialPopup()">&times;</span>
+        <h3>Coming Soon!</h3>
+        <p>Our social media accounts are coming soon. Stay tuned for updates!</p>
+    </div>
+</div>
