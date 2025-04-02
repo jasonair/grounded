@@ -1,0 +1,13 @@
+{
+  "name": "grounded",
+  "version": "1.0.0",
+  "description": "Grounded project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=8000"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

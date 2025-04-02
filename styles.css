@@ -73,11 +73,29 @@ section h2 {
 header {
     min-height: 100vh;
     width: 100%;
-    background-image: url('grounded-bg-img.jpg');
+    background-image: url('Projects/grounded/images/citiscape.png');
     background-position: center;
     background-size: cover;
     position: relative;
     color: #fff;
+}
+
+/* Add dark green overlay */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 70, 50, 0.4); /* Dark green with 50% opacity */
+    z-index: 1;
+}
+
+/* Ensure all header content is above the overlay */
+nav, .header-content {
+    position: relative;
+    z-index: 2;
 }
 
 nav {
@@ -273,12 +291,33 @@ nav .fas {
 
 /* Carbon Impact Section */
 .carbon-impact {
-    background-image: url('grounded-bg-img-2.jpg');
+    background-image: url('Projects/grounded/images/Footprints on a Natural Path.png');
     background-position: center;
     background-size: cover;
     text-align: center;
     color: #fff;
     padding: 100px 0;
+    position: relative;
+}
+
+/* Add dark green overlay */
+.carbon-impact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 70, 50, 0.3); /* Dark green with 50% opacity */
+    z-index: 1;
+}
+
+/* Ensure content appears above overlay */
+.impact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .impact-container {
@@ -714,4 +753,28 @@ footer {
     .footer-bottom p:first-child {
         margin-bottom: 10px;
     }
+}
+
+/* Update all instances of the old green (#4CAF50) with our modern green */
+.btn-primary, 
+.button,
+.cta-button {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.btn-primary:hover, 
+.button:hover,
+.cta-button:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+h3, 
+.accent-text, 
+.sustainability-tagline p,
+.benefit-icon,
+.feature-icon,
+.text-green {
+    color: #2ecc71;
 }
