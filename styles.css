@@ -312,6 +312,25 @@ nav .fas {
     margin: 0 auto 40px;
 }
 
+/* Sustainability Tagline */
+.sustainability-tagline {
+    text-align: center;
+    padding: 20px 0;
+    margin: 30px auto;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.sustainability-tagline p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
 .partner-logos {
     display: flex;
     flex-wrap: wrap;
@@ -337,10 +356,7 @@ nav .fas {
 .partner-logo {
     width: 150px;
     height: 80px;
-    background-color: #fff;
     padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     object-fit: contain;
 }
 
@@ -368,16 +384,39 @@ nav .fas {
     flex-basis: 48%;
     background: #fff;
     border-radius: 10px;
-    padding: 40px 30px;
+    padding: 0;
     margin-bottom: 30px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.benefit-col .image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.benefit-col img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .benefit-col h3 {
     color: var(--primary-color);
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin: 20px 30px;
     text-align: center;
+}
+
+.benefit-col ul {
+    padding: 0 30px 30px;
 }
 
 .benefit-col ul li {
@@ -460,7 +499,9 @@ nav .fas {
 footer {
     background-color: var(--dark-color);
     color: #fff;
-    padding: 60px 0 20px;
+    padding: 60px 0 0;
+    margin-bottom: 0;
+    display: block;
 }
 
 .footer-content {
@@ -529,6 +570,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .footer-bottom a {
