@@ -819,4 +819,16 @@ h3,
 .popup h3 {
     margin-top: 10px;
     color: #2ecc71; /* Using the modern green */
+    /* Stronger selector for feature title hover */
+    .feature-box:hover h3,
+    .feature-item:hover h3,
+    .feature:hover h3,
+    .feature-col:hover h3,
+    body .feature-box:hover h3,
+    html body .feature:hover h3,
+    #features .feature-box:hover h3,
+    section#features .feature:hover h3 {
+        color: #FFC107 !important; /* Yellow color */
+        transition: none !important; /* Disable transitions that might be interfering */
+    }
 }
